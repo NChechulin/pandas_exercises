@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pandas-exercises"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "BSD 3-Clause License"
+readme = "README.md"
+packages = [{include = "pandas_exercises"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.4.4"
+seaborn = "^0.12.0"
+numpy = "^1.23.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^22.8.0"}
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
